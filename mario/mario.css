@@ -1,0 +1,167 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --skin-color: #FFC498
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.main {
+    border: 1px solid red;
+    padding: 0;
+    width: 100%;
+    height: calc(96vw / 1.6);
+    position: relative;
+}
+
+.main::before {
+    content: ' ';
+    position: absolute;
+    background: url('new-super-mario-bros.-u-deluxe.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0.5;
+}
+
+.head {
+    border: 1px solid green;
+    margin: 0 auto;
+    height: 81.5%;
+    width: 44.9%;
+}
+
+.eyebrow {
+    position: absolute;
+    border: 1px solid #000;
+    top: 26.3%;
+    left: 37.7%;
+    border-radius: 23% 52%;
+    width: 9.3%;
+    height: 41%;
+    overflow: hidden;
+    clip-path: inset(0 0 74.5% 0);
+    transform: rotate(5deg);
+    /*background: #290101;*/
+}
+
+.eyebrow::after {
+    content: ' ';
+    position: absolute;
+    width: 128%;
+    height: 64%;
+    border: 4.4vw solid #290101;
+    border-radius: 50%;
+    top: -2%;
+    left: -65%;
+}
+
+.eye {
+    text-indent: -99999px;
+    border: 1px solid #D9A996;
+    width: 7.7%;
+    height: 16.5%;
+    position: absolute;
+    top: 36%;
+    border-radius: 65%;
+    overflow: hidden;
+    box-shadow: #666 0 0 4px, inset -5px -10px 26px #BFB6B7;
+    background: #FFF7EC;
+}
+
+.eye-color {
+    position: absolute;
+    top: 12%;
+    width: 79%;
+    height: 80%;
+    opacity: 0.5;
+    border-radius: 51%;
+    border: 2px solid #3784BB;
+    background: #3C99D4;
+    background: radial-gradient(ellipse at -17% 27%, #6EEEFB 0%, #33ADEE 85%, #3784BB 100%);
+}
+
+.eye-hole {
+    position: absolute;
+    height: 53%;
+    width: 50%;
+    border: 1px solid black;
+    top: 28%;
+    border-radius: 50%;
+    background: radial-gradient(circle at 48% 68%, #0117CC 0%, #000 50%);
+}
+
+.eye-bright {
+    position: absolute;
+    height: 23%;
+    width: 37%;
+    top: 32%;
+    border-radius: 50%;
+    background: #fff;
+    background: radial-gradient(circle, #fff 0%, transparent 50%);
+}
+
+.left-eye {
+    left: 39.5%;
+}
+
+.left-eye .eye-color {
+    left: 29.7%;
+}
+
+.left-eye .eye-hole {
+    left: 46%;
+}
+
+.left-eye .eye-bright {
+    left: 52%;
+}
+
+.right-eye {
+    right: 39.5%;
+}
+
+.right-eye .eye-color {
+    right: 27.7%;
+}
+
+.right-eye .eye-hole {
+    right: 46%;
+}
+
+.right-eye .eye-bright {
+    right: 52%;
+}
+
+.nose {
+    position: absolute;
+    border: 1px solid #EDBBA6;
+    height: 20.8%;
+    width: 15.2%;
+    left: 50%;
+    margin-left: calc(-15.2%/2);
+    top: 45.5%;
+    border-radius: 50%;
+    background-color: var(--skin-color);
+    background: radial-gradient(ellipse at 34% 30%, rgba(255, 220, 179, 1) 0%, rgba(255, 194, 150, 1) 15%, rgba(252, 180, 142, 1) 85%, rgba(212, 151, 128, 1) 100%);
+    text-indent: -99999px;
+}
+
+.body {
+    border: 1px solid yellowgreen;
+    margin: 0 auto;
+    height: 25.5%;
+    width: 54.2%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -27.1%;
+}
