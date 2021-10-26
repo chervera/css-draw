@@ -4,7 +4,7 @@
 
 :root {
     --skin-color: #FFC498;
-    --opacity-test: 0.5;
+    --opacity-test: 1;
 }
 
 body {
@@ -18,6 +18,7 @@ body {
     width: 100%;
     height: calc(96vw / 1.6);
     position: relative;
+    background: repeating-linear-gradient( -45deg, #FEE45B 7vw, #FFDC1E 13vw);
 }
 
 .main::before {
@@ -34,20 +35,29 @@ body {
 }
 
 .head {
-    border: 1px solid green;
     margin: 0 auto;
     height: 81.5%;
     width: 44.9%;
 }
 
+.hat-wrapper {
+    position: absolute;
+    width: 42%;
+    height: 71%;
+    left: 29%;
+    top: -4%;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
 .hat {
-    border: 1px solid aqua;
-    width: 94.5%;
-    height: 53%;
-    left: 2.6%;
+    width: 100%;
+    height: 62%;
+    top: 5%;
     position: relative;
     overflow: hidden;
-    border-radius: 13%;
+    border-radius: 12%;
+    opacity: var(--opacity-test);
 }
 
 .hat-body {
@@ -57,8 +67,41 @@ body {
     top: -7%;
     background: #FA1114;
     border-radius: 50%;
-    opacity: var(--opacity-test);
     background: radial-gradient(ellipse at 71% 47%, #B40606 0%, #FC191B 63%, #F9BEBB 100%);
+}
+
+.visor-wrapper {
+    overflow: hidden;
+    position: absolute;
+    width: 85%;
+    height: 76%;
+    border-radius: 50%;
+    overflow: hidden;
+    left: 7.4%;
+    top: 48%;
+}
+
+.visor {
+    position: absolute;
+    width: 106%;
+    height: 96%;
+    top: 24%;
+    left: -3%;
+    border-radius: 50%;
+    box-shadow: 0 -68px #8f0d05;
+    z-index: 2;
+}
+
+.visor::before {
+    content: '';
+    position: absolute;
+    width: 96%;
+    height: 100%;
+    top: -20%;
+    left: 2%;
+    border-radius: 50%;
+    box-shadow: 0 -9px 1vw rgb(255 255 255 / 90%);
+    z-index: 3;
 }
 
 .logo {
@@ -86,36 +129,123 @@ body {
     clip-path: polygon(6% 66%, 23% 83%, 35% 36%, 51% 57%, 67% 36%, 79% 83%, 96% 66%, 70% 7%, 51% 30%, 31% 6%);
 }
 
+.skin-wrapper {
+    width: 42%;
+    height: 44%;
+    top: 28.3%;
+    left: 28.9%;
+    position: absolute;
+    border-radius: 53%;
+    z-index: 2;
+    overflow: hidden;
+    opacity: var(--opacity-test);
+}
+
+.skin {
+    position: absolute;
+    background: #FED39F;
+    width: 71.4%;
+    height: 153%;
+    border-radius: 50%;
+    top: -60%;
+    left: 14.1%;
+}
+
+.hair-group {
+    position: relative;
+    width: 100%;
+    height: 50%;
+    margin-top: 25%;
+}
+
+.hair {
+    position: absolute;
+    width: 7.5%;
+    height: 44%;
+    top: 20%;
+}
+
+.hair::after, .hair::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #99402C;
+}
+
+.left-hair {
+    left: 11%;
+    border-radius: 40%;
+}
+
+.right-hair {
+    left: auto;
+    right: 11.2%;
+    border-radius: 40%;
+    transform: scaleX(-1);
+}
+
+.hair::before {
+    left: -3%;
+    top: 70%;
+    width: 100%;
+    height: 100%;
+    border-radius: 40%;
+    transform: rotate( 2deg);
+    background: radial-gradient(ellipse at 53% 51%, #99402C 0%, #712C14 40%, #2F0302 100%);
+}
+
+.hair::after {
+    left: -4%;
+    top: 31%;
+    width: 106%;
+    height: 103%;
+    border-radius: 40%;
+    transform: rotate( -5deg);
+    background: radial-gradient(ellipse at 53% 51%, #99402C 0%, #712C14 40%, #2F0302 100%);
+}
+
+.eyebrow-wrapper {
+    width: 42%;
+    height: 44%;
+    top: 28.3%;
+    left: 28.9%;
+    position: absolute;
+    border-radius: 53%;
+    z-index: 2;
+    overflow: hidden;
+}
+
 .eyebrow {
     position: absolute;
     border: 1px solid #000;
-    top: 26.3%;
+    top: 0.6%;
     border-radius: 23% 52%;
-    width: 9.3%;
-    height: 41%;
+    width: 21.3%;
+    height: 66%;
     overflow: hidden;
     clip-path: inset(0 0 74.5% 0);
-    /*background: #290101;*/
+    z-index: 2;
 }
 
 .eyebrow::after {
     content: ' ';
     position: absolute;
-    width: 128%;
+    width: 120%;
     height: 64%;
-    border: 4.4vw solid #290101;
+    border: 3.4vw solid #290101;
     border-radius: 50%;
-    top: -2%;
-    left: -65%;
+    top: -4.5%;
+    left: -51%;
 }
 
 .left-eyebrow {
-    left: 37.7%;
+    left: 21.7%;
     transform: rotate(5deg);
 }
 
 .right-eyebrow {
-    right: 37.7%;
+    right: 20.7%;
     transform: rotate(-5deg) scaleX(-1);
 }
 
@@ -130,6 +260,7 @@ body {
     overflow: hidden;
     box-shadow: #666 0 0 4px, inset -5px -10px 26px #BFB6B7;
     background: #FFF7EC;
+    z-index: 2;
 }
 
 .eye-color {
@@ -208,6 +339,7 @@ body {
     background-color: var(--skin-color);
     background: radial-gradient(ellipse at 34% 30%, rgba(255, 220, 179, 1) 0%, rgba(255, 194, 150, 1) 15%, rgba(252, 180, 142, 1) 85%, rgba(212, 151, 128, 1) 100%);
     text-indent: -99999px;
+    z-index: 2;
 }
 
 .body {
