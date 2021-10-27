@@ -13,7 +13,7 @@ body {
 }
 
 .main {
-    border: 1px solid red;
+    border: 1px solid transparent;
     padding: 0;
     width: 100%;
     height: calc(96vw / 1.6);
@@ -88,7 +88,7 @@ body {
     top: 24%;
     left: -3%;
     border-radius: 50%;
-    box-shadow: 0 -68px #8f0d05;
+    box-shadow: 0 -5vw 0vw 1vw #8f0d05;
     z-index: 12;
 }
 
@@ -100,7 +100,7 @@ body {
     top: -20%;
     left: 2%;
     border-radius: 50%;
-    box-shadow: 0 -9px 1vw rgb(255 255 255 / 90%);
+    box-shadow: 0 -0.9vw 1vw rgb(255 255 255 / 90%);
     z-index: 13;
 }
 
@@ -114,7 +114,7 @@ body {
     margin-left: -16.4%;
     border-radius: 50%;
     border: 0.5vw solid #fff;
-    box-shadow: #333 0 0 15px, inset -5px -10px 50px #BFB6B7;
+    box-shadow: #333 0 0 1vw, inset -1.9vw -1.7vw 5.9vw #bfb6b7;
 }
 
 .m {
@@ -212,7 +212,7 @@ body {
     left: 16%;
     top: 15%;
     border-radius: 50%;
-    box-shadow: inset #555 0 14px 13px;
+    box-shadow: inset #555 0 1vw 0.8vw;
     transform: rotate(13deg);
 }
 
@@ -223,7 +223,7 @@ body {
     left: 34%;
     top: 39%;
     border-radius: 50%;
-    box-shadow: inset #555 0 14px 13px;
+    box-shadow: inset #555 0 1vw 0.8vw;
     transform: rotate(13deg);
 }
 
@@ -301,7 +301,6 @@ body {
 
 .eyebrow {
     position: absolute;
-    border: 1px solid #000;
     top: 0.6%;
     border-radius: 23% 52%;
     width: 21.3%;
@@ -334,14 +333,13 @@ body {
 
 .eye {
     text-indent: -99999px;
-    border: 1px solid #D9A996;
     width: 7.7%;
     height: 16.5%;
     position: absolute;
     top: 36%;
     border-radius: 65%;
     overflow: hidden;
-    box-shadow: #666 0 0 4px, inset -5px -10px 26px #BFB6B7;
+    box-shadow: #666 0 0 0.3vw, inset -0.4vw -0.7vw 1.8vw #BFB6B7;
     background: #FFF7EC;
     z-index: 12;
     opacity: var(--opacity-test);
@@ -354,7 +352,7 @@ body {
     height: 80%;
     opacity: var(--opacity-test);
     border-radius: 51%;
-    border: 2px solid #3784BB;
+    border: 0.2vw solid #3784BB;
     background: #3C99D4;
     background: radial-gradient(ellipse at -17% 27%, #6EEEFB 0%, #33ADEE 85%, #3784BB 100%);
 }
@@ -363,7 +361,6 @@ body {
     position: absolute;
     height: 53%;
     width: 50%;
-    border: 1px solid black;
     top: 28%;
     border-radius: 50%;
     background: radial-gradient(circle at 48% 68%, #0117CC 0%, #000 50%);
@@ -437,7 +434,6 @@ body {
 
 .nose {
     position: absolute;
-    border: 1px solid #EDBBA6;
     height: 20.8%;
     width: 15.2%;
     left: 50%;
